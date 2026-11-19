@@ -1,0 +1,150 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Hear the Pulse | A marketing proposal for Demand Media BPM</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,800&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#16181d;--bg2:#1e2128;--line:#343944;--ink:#ffffff;--mute:#aab0bd;--or:#ff5a1f;--or2:#ff9a6b;color-scheme:dark;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+*,*::before,*::after{box-sizing:inherit}
+html{scroll-behavior:smooth;scroll-padding-top:env(safe-area-inset-top,0px)}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 1rem/1.6 "DM Sans",system-ui,sans-serif;overflow-x:hidden}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);background:var(--bg);z-index:30}
+h1,h2,h3{font-family:"Bricolage Grotesque",Georgia,sans-serif;margin:0;line-height:1.05}
+a{color:inherit}
+button{font:inherit;color:inherit;cursor:pointer}
+:focus-visible{outline:2px solid var(--or);outline-offset:3px}
+.wrap{max-width:1100px;margin:auto;padding:0 20px}
+.s{padding:72px 0;border-bottom:1px solid var(--line)}
+.s:nth-of-type(even){background:var(--bg2)}
+.tag{display:inline-block;color:var(--or);font-weight:700;font-size:.9rem;margin-bottom:12px}
+h1{font-size:clamp(2rem,5vw,3.5rem);font-weight:500;letter-spacing:-.01em;max-width:18ch;line-height:1.15}
+h1 em{font-style:normal;color:var(--or)}
+h2{font-size:clamp(1.6rem,3.6vw,2.5rem);font-weight:800;max-width:22ch}
+.lead{color:var(--mute);max-width:58ch;margin:14px 0 32px}
+.by{color:var(--mute);font-size:.95rem;margin:18px 0 40px}
+.pgrid{display:grid;gap:14px;grid-template-columns:repeat(auto-fit,minmax(210px,1fr))}
+.pcard{display:block;text-decoration:none;background:var(--bg2);border:1px solid var(--line);border-radius:16px;padding:20px;position:relative;transition:transform .2s,border-color .2s}
+.s:nth-of-type(even) .pcard{background:var(--bg)}
+.pcard:hover{transform:translateY(-3px);border-color:var(--or)}
+.pcard h3{font-size:1.3rem;margin:14px 0 4px}
+.pcard p{margin:0;color:var(--mute);font-size:.92rem}
+.pcard small{display:block;margin-top:14px;color:var(--or);font-weight:700;font-size:.85rem}
+.dot{width:34px;height:34px;border-radius:10px;background:var(--or);display:grid;place-items:center;font-family:"Bricolage Grotesque",sans-serif;font-weight:800;color:#16181d}
+.note{margin-top:22px;color:var(--mute);font-size:.95rem}
+.note b{color:var(--ink)}
+.ini{display:grid;gap:16px;grid-template-columns:repeat(auto-fit,minmax(290px,1fr))}
+.icard{background:var(--bg);border:1px solid var(--line);border-radius:18px;padding:24px;display:flex;flex-direction:column;gap:12px}
+.icard h3{font-size:1.5rem}
+.icard .k{color:var(--or);font-weight:700;font-size:.85rem}
+.icard p{margin:0;color:var(--mute);font-size:.95rem}
+.icard ul{margin:0;padding-left:18px;color:var(--ink);font-size:.95rem}
+.icard li{margin:4px 0}
+.bars{display:flex;gap:5px;align-items:flex-end;height:46px}
+.bars i{flex:1;background:var(--or);border-radius:3px;animation:bar 1.4s ease-in-out infinite}
+.bars i:nth-child(2n){animation-delay:.25s;background:var(--or2)}.bars i:nth-child(3n){animation-delay:.5s}
+@keyframes bar{0%,100%{height:20%}50%{height:100%}}
+.qs{display:flex;flex-wrap:wrap;gap:6px}
+.qs span{border:1px solid var(--or);color:var(--or2);border-radius:999px;padding:3px 11px;font-size:.82rem}
+.loop{width:100%;height:50px}
+.loop path{fill:none;stroke:var(--or);stroke-width:3;stroke-linecap:round;stroke-dasharray:6 8;animation:dash 6s linear infinite}
+@keyframes dash{to{stroke-dashoffset:-140}}
+.chain{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin-bottom:14px}
+.chain button{background:var(--bg);border:1px solid var(--line);border-radius:999px;padding:8px 14px;transition:background .2s,border-color .2s}
+.chain button:hover,.chain button[aria-pressed=true]{background:var(--or);border-color:var(--or);color:#16181d}
+.chain u{text-decoration:none;color:var(--or)}
+.say{background:var(--bg);border:1px solid var(--line);border-left:3px solid var(--or);border-radius:12px;padding:14px 18px;min-height:56px;margin-bottom:32px}
+.cols{display:grid;gap:14px;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));margin-bottom:28px}
+.col{background:var(--bg);border:1px solid var(--line);border-radius:16px;padding:20px}
+.col h3{font-size:1.1rem;color:var(--or);margin-bottom:8px}
+.col ul{margin:0;padding-left:18px;color:var(--mute);font-size:.93rem}
+.jour{display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+.jour span{background:var(--or);color:#16181d;font-weight:700;border-radius:10px;padding:8px 14px;font-size:.92rem}
+.jour u{text-decoration:none;color:var(--or)}
+.tl{display:grid;gap:16px;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));border-top:3px solid var(--or);padding-top:22px}
+.st h3{font-size:1.25rem;margin-bottom:2px}
+.st .d{color:var(--or);font-weight:700;font-size:.85rem}
+.st ul{margin:10px 0 0;padding-left:18px;color:var(--mute);font-size:.94rem}
+.end{margin-top:40px;font-family:"Bricolage Grotesque",Georgia,sans-serif;font-size:clamp(1.3rem,3vw,1.9rem);font-weight:800;max-width:24ch}
+.end em{font-style:normal;color:var(--or)}
+.rv{opacity:0;transform:translateY(14px);transition:opacity .6s,transform .6s}.rv.on{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.rv{opacity:1;transform:none}}
+</style>
+</head>
+<body>
+
+<section class="s"><div class="wrap">
+<span class="tag">Building a stronger Pulse</span>
+<h1>Hear the <em>Pulse</em>.</h1>
+<p class="lead" style="margin:12px 0 0;font-size:1.15rem">Getting more from every conversation.</p>
+<p class="by">A marketing proposal by Pratiksha Girhe, for Demand Media BPM</p>
+<h2 style="margin-bottom:22px">Six Pulse brands. Six audiences.</h2>
+<div class="pgrid" id="pg"></div>
+<p class="note"><b>Already working:</b> written interviews and guest articles run across the network. The ideas ahead build on them, they don’t replace them.</p>
+</div></section>
+
+<section class="s"><div class="wrap rv">
+<span class="tag">Three content initiatives</span>
+<h2>Three ideas I can start with</h2>
+<p class="lead">Each one is simple to produce, easy to repeat and built to bring executives and readers together.</p>
+<div class="ini">
+<div class="icard"><span class="k">A. The podcast series</span><h3>Pulse Room</h3>
+<div class="bars" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+<p>A 15–20 minute video podcast with an industry leader.</p>
+<ul><li>A short, engaging introduction</li><li>A fireside chat on one subject</li><li>One strong closing takeaway</li></ul>
+<p>Builds executive visibility, creates reusable content and opens doors to future partnerships.</p></div>
+<div class="icard"><span class="k">B. The quick take</span><h3>Pulse Rapid Fire</h3>
+<p>A standalone short video. Five quick questions, spontaneous and easy to share.</p>
+<div class="qs"><span>Overrated trend?</span><span>Tech worth backing?</span><span>Common misconception?</span><span>Bold prediction?</span><span>One piece of advice?</span></div>
+<p>Published on its own, not buried inside the podcast.</p></div>
+<div class="icard"><span class="k">C. Keep the conversation going</span><h3>The Pulse Loop</h3>
+<svg class="loop" viewBox="0 0 300 50" preserveAspectRatio="none" aria-hidden="true"><path d="M20 25 C20 5 120 5 150 25 S280 45 280 25 S180 5 150 25 S20 45 20 25"/></svg>
+<p>Readers send in questions or business challenges. Selected ones go to an upcoming expert, and the answer comes back as a short video, an article or a social post.</p>
+<p>Gives readers a reason to return and executives a reason to take part, with relevant opt-in enquiries.</p></div>
+</div></div></section>
+
+<section class="s"><div class="wrap rv">
+<span class="tag">Distribution and business value</span>
+<h2>One conversation, seven assets</h2>
+<p class="lead">One executive’s time feeds the whole chain. Tap a step.</p>
+<div class="chain" id="chain"></div>
+<div class="say" id="say" aria-live="polite"></div>
+<div class="cols">
+<div class="col"><h3>For Demand Media</h3><ul><li>Audience growth</li><li>Repeat engagement</li><li>Website traffic</li><li>Contributor relationships</li><li>Possible commercial opportunities</li></ul></div>
+<div class="col"><h3>For executives and companies</h3><ul><li>Professional visibility</li><li>Thought leadership</li><li>Relevant audience exposure</li><li>Possible business enquiries</li></ul></div>
+<div class="col"><h3>For readers</h3><ul><li>Useful insights</li><li>Access to industry experts</li><li>Their questions answered</li></ul></div>
+</div>
+<div class="jour"><span>Discover</span><u>→</u><span>Engage</span><u>→</u><span>Register or enquire, by choice</span><u>→</u><span>Relevant follow-up</span></div>
+<p class="note">No guaranteed leads and no invented numbers. The first 90 days show what actually works.</p>
+</div></section>
+
+<section class="s"><div class="wrap rv">
+<span class="tag">The first 90 days</span>
+<h2>Realistic from day one</h2>
+<p class="lead">Small team, simple formats, one clear review at the end.</p>
+<div class="tl">
+<div class="st"><span class="d">Days 1–30</span><h3>Prepare</h3><ul><li>Finalise the formats and visual identity</li><li>Identify the first guests</li><li>Prepare topics and recording schedules</li><li>Produce the first content assets</li></ul></div>
+<div class="st"><span class="d">Days 31–60</span><h3>Launch</h3><ul><li>Publish the first podcast episodes</li><li>Launch standalone Rapid Fire videos</li><li>Introduce the Pulse Loop</li><li>Repurpose across the sites and social channels</li></ul></div>
+<div class="st"><span class="d">Days 61–90</span><h3>Evaluate</h3><ul><li>Review views, watch time, engagement and traffic</li><li>Track registrations and relevant enquiries</li><li>Review guest referrals and participation</li><li>Recommend what to do next</li></ul></div>
+</div>
+<p class="end">Content, audience, executives and business, <em>connected</em>. Ready to start on day one.</p>
+</div></section>
+
+<script>
+var P=[["IT Tech Pulse","https://ittech-pulse.com/","IT leaders and technology buyers"],["MarTech Pulse","https://martech-pulse.com/","Marketing and growth leaders"],["FinTech Pulse","https://fintech-pulse.com/","Finance and fintech leaders"],["HRTech Pulse","https://hrtech-pulse.com/","HR and people leaders"],["HealthTech Pulse","https://healthtech-pulse.com/","Healthcare technology leaders"],["Leaders Pulse","https://leaders-pulse.com/","Executives across industries"]];
+var C=[["Podcast","The full 15–20 minute conversation."],["Rapid Fire","Five quick questions, published on its own."],["Short clips","The best 30 seconds, cut for social."],["Audio teasers","Voice-only snippets, no extra filming."],["Quote visuals","One line from the guest, designed to share."],["Website articles","The conversation written up for reading and search."],["LinkedIn","Promoted by the brand and, with approval, by the guest."]];
+function $(i){return document.getElementById(i)}
+P.forEach(function(p){var a=document.createElement("a");a.className="pcard";a.href=p[1];a.target="_blank";a.rel="noopener";
+a.innerHTML="<div class=\"dot\">"+p[0].charAt(0)+"</div><h3>"+p[0]+"</h3><p>"+p[2]+"</p><small>Visit the live site →</small>";$("pg").appendChild(a)});
+C.forEach(function(c,i){var b=document.createElement("button");b.textContent=c[0];b.onclick=function(){
+$("chain").querySelectorAll("button").forEach(function(x){x.setAttribute("aria-pressed",x===b)});$("say").textContent=c[1]};
+$("chain").appendChild(b);if(i<C.length-1){var u=document.createElement("u");u.textContent="→";$("chain").appendChild(u)}if(i===0)b.click()});
+var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add("on");io.unobserve(e.target)}})},{threshold:.1});
+document.querySelectorAll(".rv").forEach(function(e){io.observe(e)});
+</script>
+</body>
+</html>
